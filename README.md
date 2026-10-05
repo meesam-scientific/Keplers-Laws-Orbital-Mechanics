@@ -89,7 +89,7 @@ This project is not a neutron transport calculation, but it builds numerical ski
 - **Time integration of differential equations.** Reactor analysis uses the same kind of ODE solvers, for example for point reactor kinetics and fuel depletion (Bateman equations). The choice of method and time step controls the accuracy, as the time step and conservation checks in Parts 1 and 2 show.
 - **Verification against exact solutions and conserved quantities.** The simulated orbit is checked against the exact ellipse and against conservation of angular momentum. Nuclear codes are verified in the same way, against analytical benchmarks and balance (conservation) checks.
 - **Inverse-square central force.** The Kepler problem has the same mathematical form as the Coulomb force, so the same code can describe Rutherford scattering of a charged particle by a nucleus (hyperbolic instead of elliptical orbits).
-- **Two kinds of numerical error.** Here the error is deterministic and shrinks as the time step is reduced. In Monte Carlo codes such as OpenMC (see my Nuclear-Reactor-Simulations repository) the error is statistical and shrinks roughly as 1/sqrt(N) with the number of neutron histories.
+- **Two kinds of numerical error.** Here the error is deterministic and shrinks as the time step is reduced. In Monte Carlo codes such as OpenMC ([see my Nuclear-Reactor-Simulations repository](https://github.com/meesam-scientific/Nuclear-Reactor-Simulations)) the error is statistical and shrinks roughly as 1/sqrt(N) with the number of neutron histories.
 
 ## How to run
 
